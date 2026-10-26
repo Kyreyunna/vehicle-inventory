@@ -19,17 +19,30 @@ public class VehicleScanner {
         System.out.println("Enter your command: ");
 
         String Vehicle = scanner.nextLine();
-
+// switch case and break replace the if else statements
         int command = scanner.nextInt();
         switch(command) {
             case 1:
                 listAllVehicles(Vehicle);
                 break;
             case 2:
-                findVehiclesByMakeModel();
+                findVehiclesByMakeModel(Vehicle);
+                break;
+            case 5:
+                addAVehicle(Vehicle);
                 break;
 //...
         }
+
+    }
+
+    private static void listAllVehicles(String vehicle) {
+        int i = 0;
+        while (i < 5) {
+            System.out.println(i);
+            i++;
+    }
+    private static void findVehiclesByMakeModel(String vehicle){
 
     }
 }
